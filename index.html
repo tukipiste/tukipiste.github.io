@@ -1,6 +1,104 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Tukipiste.fi</title>
+	<link rel="icon" href="favicon.ico">
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+	<link href="style_dropdown.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+	
 <body>
-<img src="img/ohno_hd.jpg" width="100%" />
+<div class="site-content"> <!--kaikki tämän sisällä-->
+	
+<header>
+	<div id="logo">
+		 <img src="img/logo.png" alt="tukipiste" width="200px" height="100%">
+	</div>
+	<div class="navbar"> <!--nappi palkki-->
+		<a href="#home">Koti</a>
+		<a href="#news">Uutiset</a>
+		<div class="dropdown">
+			<button class="dropbtn" onclick="topMenu()">valikko
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" id="topDropdown">
+				<a href="#">linkki 1</a>
+				<a href="#">linkki 2</a>
+				<a href="#">linkki 3</a>
+			</div>
+		</div>
+	</div> 
+</header>
+	
+
+<div id="sisalto">
+	<div id="valikko">
+		<div id="row 1">
+			<div class="card">
+				<img src="img/depression.png" alt="Avatar" style="width:100%">
+				<div class="container">
+				<h4><b>Masennus</b></h4>
+				<p></p>
+				</div>
+				<!--<a target="_blank" rel="noopener noreferrer" href="https://www.mielenterveystalo.fi/aikuiset/Tietopankki/Diagnoosi-tietohaku/F30-39/Pages/F32-33.aspx"><span></span></a>-->
+			</div>
+
+			<div class="card">
+				<img src="img/credit.png" alt="Avatar" style="width:100%">
+				<div class="container">
+				<h4><b>Velkaongelmat</b></h4>
+				<p>teksti</p>
+				</div>
+				<a target="_blank" rel="noopener noreferrer" href=""><span></span></a>
+			</div>
+
+			<div class="card">
+				<img src="img/drugs.png" alt="Avatar" style="width:100%">
+				<div class="container">
+				<h4><b>Päihteet</b></h4>
+				<p>teksti</p>
+				</div>
+				<a target="_blank" rel="noopener noreferrer" href="https://www.mielenterveystalo.fi/aikuiset/itsehoito-ja-oppaat/oppaat/tietoa-paihteista/Pages/default.aspx"><span></span></a>
+			</div>
+		</div>
+		<div id="row 2">
+			<div class="card">
+				<img src="img/moneygames.png" alt="Avatar" style="width:100%">
+				<div class="container">
+				<h4><b>Peliriippuvuus</b></h4>
+				<p>teksti</p>
+				</div>
+				<a target="_blank" rel="noopener noreferrer" href=""><span></span></a>
+			</div>
+
+			<div class="card">
+				<img src="img/pcmoney.png" alt="Avatar" style="width:100%">
+				<div class="container">
+				<h4><b>Rahapelaaminen</b></h4>
+				<p>teksti</p>
+				</div>
+				<a target="_blank" rel="noopener noreferrer" href="https://www.mielenterveystalo.fi/aikuiset/itsehoito-ja-oppaat/oppaat/peliriippuvuus/Pages/default.aspx"><span></span></a>
+			</div>
+
+			<div class="card">
+					<img src="img/homeless.png" alt="Avatar" style="width:100%">
+					<div class="container">
+					<h4><b>Kodittomuus</b></h4>
+					<p>teksti</p>
+					</div>
+					<a target="_blank" rel="noopener noreferrer" href="https://asuntoensin.fi/"><span></span></a>
+			</div>
+		</div>
+	</div> <!--valikko kiinni-->
+	
+</div> <!--sisalto kiinni-->
+
+<div id="footter"></div>
+	
+</div> <!--site-content kiinni-->
+
+<!--kuvat: https://www.pexels.com/-->
 </body>
 </html>
